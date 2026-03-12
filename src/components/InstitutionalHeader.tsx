@@ -7,7 +7,7 @@ const InstitutionalHeader = () => {
     return (
         <header className="w-full bg-white border-b border-gray-100 shadow-sm py-2">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
                     {/* Left: College Logo */}
                     <div className="flex-shrink-0">
                         <div className="w-20 h-20 md:w-32 md:h-32 relative flex items-center justify-center">

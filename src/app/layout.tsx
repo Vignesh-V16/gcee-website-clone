@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${openSans.variable} antialiased`}
+        className={`${inter.variable} ${openSans.variable} antialiased overflow-x-hidden`}
       >
         <InstitutionalHeader />
         {children}
