@@ -136,16 +136,7 @@ const DepartmentDetailPage = () => {
     const slug = params.slug as string;
     const dept = departmentData[slug] || departmentData["civil-engineering"]; // Fallback to civil for safety
 
-    const introAudioSrc = (() => {
-        switch (slug) {
-            case "civil-engineering":
-                return "/audio/civil-intro.wav";
-            case "mechanical-engineering":
-                return "/audio/mechanical-intro.wav";
-            default:
-                return `/audio/${slug}-intro.wav`;
-        }
-    })();
+    const introAudioSrc = `/audio/departments/${slug}.wav`;
 
     return (
         <main className="min-h-screen bg-white">
