@@ -112,7 +112,7 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden xl:flex items-center space-x-0.5">
+                    <div className="hidden lg:flex items-center space-x-0">
                         {navItems.map((item) => (
                             <div
                                 key={item.name}
@@ -122,7 +122,7 @@ const Navbar = () => {
                             >
                                 <Link
                                     href={item.href}
-                                    className={`px-3 py-2 rounded-md text-[13px] font-bold flex items-center transition-colors whitespace-nowrap ${scrolled ? "text-primary hover:bg-primary/5" : "text-white hover:bg-white/10"
+                                    className={`px-2 xl:px-3 py-2 rounded-md text-[11px] xl:text-[13px] font-bold flex items-center transition-colors whitespace-nowrap ${scrolled ? "text-primary hover:bg-primary/5" : "text-white hover:bg-white/10"
                                         }`}
                                 >
                                     {item.name}
@@ -162,7 +162,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <div className="xl:hidden flex items-center">
+                    <div className="lg:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className={`p-2 rounded-md ${scrolled ? "text-primary" : "text-white"}`}
@@ -180,7 +180,7 @@ const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="xl:hidden bg-white overflow-hidden border-t"
+                        className="lg:hidden bg-white overflow-hidden border-t"
                     >
                         <div className="px-4 pt-2 pb-6 space-y-1">
                             {navItems.map((item) => (
